@@ -1,0 +1,45 @@
+Selenium WebDriver
+Objetivo:
+El objetivo de esta prueba fue automatizar un flujo de compra en la página https://www.saucedemo.com utilizando Selenium WebDriver.
+
+Conclusiones:
+
+Login: La autenticación se realizó correctamente para el usuario standard_user. Sin embargo, se debe verificar la seguridad del proceso de autenticación para evitar vulnerabilidades.
+
+Adición de productos al carrito: Los productos fueron añadidos correctamente al carrito. El manejo de excepciones fue fundamental para identificar posibles fallos en la adición de los productos.
+
+Acceso al carrito: El acceso al carrito se realizó sin inconvenientes, y las capturas de pantalla permitieron confirmar visualmente que los productos correctos estaban en el carrito.
+
+Verificación de productos en el carrito: Se confirmó que los productos seleccionados estaban presentes en el carrito, lo que demuestra que la funcionalidad de almacenamiento de productos seleccionados está funcionando según lo esperado.
+
+Proceso de compra: El formulario de compra fue completado correctamente y la compra fue finalizada. Las verificaciones de los precios mostraron coherencia en los valores esperados.
+
+Mensaje de confirmación: El mensaje de confirmación se mostró correctamente, indicando que el flujo de compra se completó sin errores.
+
+Recomendaciones:
+
+Implementar más pruebas para diferentes combinaciones de productos y usuarios.
+Automatizar la limpieza de los datos de prueba para evitar interferencias en pruebas futuras.
+
+
+Cypress
+Objetivo:
+Automatizar la interacción con la API de PetStore, realizando operaciones de creación, consulta, actualización y eliminación de mascotas.
+
+Conclusiones:
+
+Añadir una mascota a la tienda: La mascota fue añadida correctamente en la mayoría de los casos. Sin embargo, se observó que, en algunos casos, la API devuelve códigos de estado que deben manejarse mejor en la prueba para evitar falsos negativos.
+
+Consultar la mascota ingresada previamente: La consulta de la mascota por ID funcionó según lo esperado. Las validaciones adicionales garantizaron que el nombre y el estado de la mascota fueran correctos.
+
+Actualizar el nombre y el estado de la mascota: La actualización de los detalles de la mascota fue exitosa. Se recomienda agregar validaciones adicionales para otros campos.
+
+Consulta por estado: La búsqueda por estado funcionó correctamente, permitiendo validar que la mascota actualizada aparezca con el estado correcto.
+
+Eliminación de la mascota: La eliminación de la mascota fue efectiva en la mayoría de los casos. En casos de fallo, se registraron los errores, lo que permite un diagnóstico más sencillo.
+
+Recomendaciones:
+
+Implementar pruebas adicionales para manejar diferentes escenarios de error de la API.
+Mejorar la robustez del código para manejar situaciones en las que la API no devuelva el comportamiento esperado.
+Considerar el uso de herramientas de gestión de pruebas para mejorar el seguimiento de los casos de prueba y resultados.
